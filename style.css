@@ -1,0 +1,161 @@
+/** 1. Settings **/
+
+:root {
+  --color-principal: #1b237e;
+  --background: #8677e1;
+  --complementos: #363897;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+/** ----------------------- **/
+
+/** 2. Tools **/
+
+/** Responsivle **/
+
+/** ----------------------- **/
+
+/** 3. Generic **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** ----------------------- **/
+
+/** 4. Elements **/
+
+body {
+    background-color: var(--background);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    background-color: var(--color-principal);
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 0px 0px 2px var(--negro);
+}
+
+nav {
+    margin-top: 3px;
+    background-color: var(--color-principal);
+    text-align: center;
+}
+
+nav a {
+    color: var(--blanco);
+    display: inline-block;
+    background-color: var(--complementos);
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 2px var(--negro);
+}
+nav a:hover {
+    background-color: #514db0;
+}
+
+footer {
+    text-shadow: 0px 0px 2px var(--negro);
+    text-align: center;
+    color: var(--blanco);
+    padding: 10px;
+    background-color: var(--color-principal);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 5px;
+}
+
+/** ----------------------- **/
+
+/** 5. Objects **/
+
+.initial-title {
+    padding: 10px;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 0px 0px 2px var(--negro);
+    background-color: var(--color-principal);
+}
+
+.me {
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+    color: var(--blanco);
+    text-shadow: 0px 0px 2px var(--negro);
+    background-color: var(--color-principal);
+}
+
+.me-info {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.skills {
+    padding: 25px;
+    color: var(--blanco);
+    margin-top: 20px;
+    background-color: var(--color-principal);
+}
+
+.projects {
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    margin: 20px;
+    width: 18rem;
+}
+
+.git-profile {
+    color: var(--blanco);
+    text-shadow: 0px 0px 2px var(--negro);
+}
+
+/** ----------------------- **/
+
+/** 6. Components **/
+
+.me img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.me img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.me-info h3 {
+    padding-bottom: 2px;
+}
+.me-info p {
+    padding-top: 10px;
+}
+
+.skills h3 {
+    text-align: center;
+}
+.skills ul {
+    margin: 5px;
+}
+
+.git-profile:hover{
+    text-decoration: underline;
+}
